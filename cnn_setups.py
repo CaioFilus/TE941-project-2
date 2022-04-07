@@ -50,7 +50,7 @@ for i, model in enumerate(modelSetups):
                 loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
                 metrics=['accuracy'])
 
-  model.fit(train_images, train_labels, epochs=1, 
+  model.fit(train_images, train_labels, epochs=20, 
                     validation_data=(test_images, test_labels))
 
 for i, model in enumerate(modelSetups):
